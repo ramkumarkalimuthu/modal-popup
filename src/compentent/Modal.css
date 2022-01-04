@@ -1,0 +1,77 @@
+.Modelcontainer {
+    width: 300px;
+    height: 300px;
+    display: block;
+    min-width: 400px;
+    flex-direction: column;
+    background-color: rgb(114, 129, 212);
+     text-align: center;
+    margin: 20px auto;
+    
+}
+.modalheader
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 2px solid #fff;
+}
+.headlist
+{
+    color: #fff;
+    font-size: 20px;
+}
+.closebtn{
+
+    color:#fff;
+    font-size: 20px;
+    border: 1px solid #fff;
+    padding: 8px 8px 8px 8px ;
+    text-align: center;
+    font-weight: 700;
+}
+.modelbody
+{
+    display: block;
+   border-bottom: 2px solid #fff;
+   padding: 20px;
+
+}
+.formlist
+{
+    display: flex;
+    flex-direction: column;    
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+.modalfooter
+{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+
+}
+.cancelbtn{
+
+    color: #fff;
+    font-size: 15px;
+    padding: 8px;
+    background-color: crimson;
+    border: 0px;
+    font-weight: 700;
+
+}
+.subimt{
+
+    color: #fff;
+    font-size: 15px;
+    padding: 8px;
+    background-color: rgb(20, 220, 87);
+    border: 0px;
+    font-weight: 700;
+
+}

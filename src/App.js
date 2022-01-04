@@ -1,23 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
+import { useState } from 'react';
+import Modal from './compentent/Modal';
 
 function App() {
+  const [openpopup, SetOpenPopup] = useState(false);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className='container'> 
+      <h1 className='contactnav'>My Contact</h1>
+      <button className='openmodal' onClick={() => SetOpenPopup(true)}>Add Contact</button>
+      </div>
+    { openpopup && <Modal ClosePopup={SetOpenPopup} />} 
     </div>
   );
 }
